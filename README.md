@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 
 ### Dataset
-The datasets are available at: (todo). Place them inside `corpus` folder.
+The datasets are available at: https://drive.google.com/file/d/1l023BW0s9FEyF5SqPMoR80WZweCLCY2v/view?usp=sharing. Place `PTB`, `CTB`, and `UD2.2` folders inside `corpus` folder.
 
 To conduct experiments on specific dataset, modify `corp` in `src/dependency/config.py`. The value of `corp` can be selected in `["PTB", "CTB", "bg", "ca", "cs", "de", "en", "es", "fr", "it", "nl", "no", "ro", "ru"]`.
 
