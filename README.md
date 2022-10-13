@@ -9,24 +9,18 @@ pip install -r requirements.txt
 ```
 
 ### Dataset
-The datasets are available at: https://drive.google.com/file/d/1l023BW0s9FEyF5SqPMoR80WZweCLCY2v/view?usp=sharing. Place `PTB`, `CTB`, and `UD2.2` folders inside `corpus` folder.
+The datasets are available [here](https://drive.google.com/file/d/1l023BW0s9FEyF5SqPMoR80WZweCLCY2v/view?usp=sharing). Place `PTB`, `CTB`, and `UD2.2` folders inside `corpus` folder.
 
 To conduct experiments on specific dataset, modify `corp` in `src/dependency/config.py`. The value of `corp` can be selected in `["PTB", "CTB", "bg", "ca", "cs", "de", "en", "es", "fr", "it", "nl", "no", "ro", "ru"]`.
 
 ### Pre-trained Model
 To use specific pre-trained model, place corresponding model folder inside `data` folder, and modify `pretrain_name` in `src/dependency/config.py` to name of the model folder. The pre-trained models we use are following: 
 
-* bert-base(PTB): https://huggingface.co/bert-base-uncased
+* for PTB: [bert-base](https://huggingface.co/bert-base-uncased), [bert-large](https://huggingface.co/bert-large-uncased), [XLNet-base](https://huggingface.co/xlnet-base-cased), [XLNet-large](https://huggingface.co/xlnet-large-cased)
 
-* bert-large(PTB): https://huggingface.co/bert-large-uncased
+* for CTB: [bert-base-chinesee](https://huggingface.co/bert-base-chinese)
 
-* XLNet-base(PTB): https://huggingface.co/xlnet-base-cased
-
-* XLNet-large(PTB): https://huggingface.co/xlnet-large-cased
-
-* bert-base-chinesee(CTB): https://huggingface.co/bert-base-chinese
-
-* bert-base-multilingual(UD): https://huggingface.co/bert-base-multilingual-cased
+* for UD2.2: [bert-base-multilingual](https://huggingface.co/bert-base-multilingual-cased)
 
 ## Usage
 Go inside code folder with:
