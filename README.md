@@ -35,7 +35,7 @@ Evaluation on the test set happens automatically after training is complete. The
 
 The models are saved in `model` folder. The training process can be interrupted, and it will start from checkpoint (the latest model and optimizer) next time. 
 
-The program finds checkpoint by the name. Thus, if you want to restart training process from beginning, remove or rename corresponding model folder. 
+The program finds checkpoint by the name. Thus, if you want to restart training process from beginning, remove or rename corresponding model folder. You can also set `from_checkpoint` in `dir.py` to `0`.
 
 You can evaluate the latest model on test set with:
 ```bash
