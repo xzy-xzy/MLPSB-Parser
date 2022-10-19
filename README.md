@@ -60,6 +60,23 @@ python main.py test
 
 * `time_check`: whether to check the time (section 4.7)
 
+## Citation
+```
+@inproceedings{xu-etal-2022-multi,
+    title = "Multi-Layer Pseudo-{S}iamese Biaffine Model for Dependency Parsing",
+    author = "Xu, Ziyao  and
+      Wang, Houfeng  and
+      Wang, Bingdong",
+    booktitle = "Proceedings of the 29th International Conference on Computational Linguistics",
+    month = oct,
+    year = "2022",
+    address = "Gyeongju, Republic of Korea",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2022.coling-1.486",
+    pages = "5476--5487",
+}
+```
+
 ## Acknowledgements
 
 * The code of pre-trained model embedding is based on [second-order-parser](https://github.com/wangxinyu0922/Second_Order_Parsing).
