@@ -144,7 +144,7 @@ class Dir:
             try:
                 FB = '_BEST' if self.frombest[i] else '_LATEST'
                 self.modellist[i].load_state_dict(tch.load(self.modeldir[i] + FB))
-                if self.rangenow != self.rangenext:
+                if self.rangenow != self.rangenext and self.train_mode != "test":
                     self.optlist[i].load_state_dict(tch.load(self.modeldir[i] + '_opt' + FB))
                 print(self.modelname[i] + " Found")
             except Exception as e:
