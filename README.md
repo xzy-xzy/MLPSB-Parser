@@ -22,6 +22,30 @@ To use specific pre-trained model, place corresponding model folder inside `data
 
 * for UD2.2: [bert-base-multilingual](https://huggingface.co/bert-base-multilingual-cased)
 
+### Directory Structure
+The final directory structure looks like this:
+
+```
+.
+├── README.md
+├── corpus
+│   ├── CTB
+│   ├── PTB
+│   └── UD2.2
+├── data
+│   ├── XLNet_base
+│   ├── XLNet_large
+│   ├── bert_base
+│   ├── bert_base_chinese
+│   ├── bert_base_multilingual
+│   └── bert_large
+├── requirements.txt
+└── src
+    └── dependency_parsing
+
+```
+You can keep only the folders you need in `corpus` and `data`.
+
 ## Usage
 Go inside code folder with:
 ```bash
