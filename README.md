@@ -23,7 +23,7 @@ To use specific pre-trained model, place corresponding model folder inside `data
 * for UD2.2: [bert-base-multilingual](https://huggingface.co/bert-base-multilingual-cased)
 
 ### Directory Structure
-The final directory structure looks like this:
+The prepared directory structure looks like this:
 
 ```
 .
