@@ -72,7 +72,7 @@ class Dir:
             self.precheck_mode = 1
         if len(sys.argv) >= 3 and sys.argv[2] == "testb":
             self.train_mode = "test"
-            self.best_mode = 1
+            self.bestmode = 1
             self.save_model = 0
 
     def Insert_model(self, x, name, change, lr=None):
