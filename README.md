@@ -9,9 +9,12 @@ pip install -r requirements.txt
 ```
 
 ### Dataset
-The datasets are available [here](https://drive.google.com/file/d/1l023BW0s9FEyF5SqPMoR80WZweCLCY2v/view?usp=sharing). Place `PTB`, `CTB`, and `UD2.2` folders inside `corpus` folder.
+The datasets are available [here](https://drive.google.com/file/d/1l023BW0s9FEyF5SqPMoR80WZweCLCY2v/view?usp=sharing). Place `PTB`, `CTB`, and `UD2.2` folders inside `corpus` folder. 
 
 To conduct experiments on specific dataset, modify `corp` in `src/dependency/config.py`. The value of `corp` can be selected in `["PTB", "CTB", "bg", "ca", "cs", "de", "en", "es", "fr", "it", "nl", "no", "ro", "ru"]`.
+
+`*.npy` file stores the list of data. Each data includes 4 lists, which store token, POS tag, head and relationship of each position in the sentence.  `*log.txt` file stores all possible POS tags and relationships in the dataset.
+
 
 ### Pre-trained Model
 To use specific pre-trained model, place corresponding model folder inside `data` folder, and modify `pretrain_name` in `src/dependency/config.py` to name of the model folder. The pre-trained models we use are following: 
